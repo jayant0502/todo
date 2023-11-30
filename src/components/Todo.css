@@ -1,0 +1,26 @@
+.list-inp{
+    width: 100% !important;
+    line-height: 1;
+
+}
+.todo-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   max-width: 100%;
+   text-align: start;
+   white-space: wrap;
+   background-image: linear-gradient(to right bottom, #34cad8, #4acedd, #5cd1e2, #6cd5e7, #7ad8eb);
+   box-shadow: 1px  2px #6cd5e7;
+   padding: 1rem;
+   border-radius: 10px;
+   color: black;
+   font-size: 1rem;
+   font-weight: 600;
+   margin: 1rem;
+   
+}
+.btn1{
+    color: white !important;
+    font-weight: 500;
+}
