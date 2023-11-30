@@ -21,7 +21,7 @@ useEffect(() => {
   const fetchData = async () => {
     try {
       const response = await axios.get('http://localhost:8000/todos');
-      dispatch({ type: 'ADD_TODO', payload: response.data.map((item=>(item.id))) });
+      dispatch({ type: 'ADD_TODO', payload: response.data });
       console.log(response)
     } catch (error) {
       console.error("Error fetching todos from server:", error);
