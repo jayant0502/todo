@@ -19,4 +19,18 @@
 .todo-wrapper{
     width: 80%;
     height: 70vh;
+    overflow: scroll;
+    overflow-x: hidden;
 }
+
+::-webkit-scrollbar {
+    width: 6px;
+    
+}
+
+::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+     
+    background-image: linear-gradient(to top , #d16ba598, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    box-shadow: 0 -100% 0 100% var(--shadow), 0 0 15px 5px black;
+  }

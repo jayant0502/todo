@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { addTodo } from '../Action';
+import { addTodo , addTodos } from '../Action';
 import axios from 'axios';
 import Todo from './Todo';
 import "./TodoList.css"
@@ -21,9 +21,10 @@ useEffect(() => {
   const fetchData = async () => {
     try {
       const response = await axios.get('http://localhost:8000/todos');
-      dispatch({ type: 'ADD_TODO', payload: response.data });
-      console.log(response)
+      dispatch(addTodos(response.data));
+      console.log(response.data)
     } catch (error) {
+      
       console.error("Error fetching todos from server:", error);
     }
   };
