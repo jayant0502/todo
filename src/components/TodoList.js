@@ -16,7 +16,7 @@ const TodoList = () => {
 
 useEffect(() => {
     fetchData();
-  }, [dispatch]);
+  }, []);
 
   const fetchData = async () => {
     try {
